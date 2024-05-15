@@ -2,34 +2,34 @@
 #include <math.h>
 using namespace std;
 
-// print prime number between two prime number use function
-// bool isPrime(int num)
-// {
-//     for (int i = 2; i <= sqrt(num); i++)
-//     {
-//         if (num % i == 0)
-//         {
-//             return false;
-//         }
-//     }
-//     return true;
-// }
-// int main()
-// {
+//print prime number between two prime number use function
+bool isPrime(int num)
+{
+    for (int i = 2; i <= sqrt(num); i++)
+    {
+        if (num % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+int main()
+{
 
-//     int a, b;
-//     cin >> a >> b;
+    int a, b;
+    cin >> a >> b;
 
-//     for (int i = a; i <= b; i++)
-//     {
-//         if (isPrime(i) == true)
-//         {
-//             cout << i << endl;
-//         }
-//     }
+    for (int i = a; i <= b; i++)
+    {
+        if (isPrime(i) == true)
+        {
+            cout << i << endl;
+        }
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 //print fibenacci sequence
@@ -104,24 +104,24 @@ using namespace std;
 // }
 
 
-int fact(int n){
-    int factorial=1;
-    for(int i=2;i<=n;i++){
-        factorial*=i;
-    }
-    return factorial;
-}
+// int fact(int n){
+//     int factorial=1;
+//     for(int i=2;i<=n;i++){
+//         factorial*=i;
+//     }
+//     return factorial;
+// }
 
-int main(){
-    int n;
-    cin>>n;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<=i;j++){
-            cout<<fact(i)/fact(j)*fact(i-j)<<" ";
+// int main(){
+//     int n;
+//     cin>>n;
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<=i;j++){
+//             cout<<fact(i)/fact(j)*fact(i-j)<<" ";
 
-        }
-        cout<<endl;
-    }
+//         }
+//         cout<<endl;
+//     }
     
-    return 0;
-}
+//     return 0;
+// }
